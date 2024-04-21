@@ -10,7 +10,7 @@ function Formulario() {
     event.preventDefault();
     try {
       // Envía los datos del formulario al servidor
-      const response = await axios.post('/api/login', { username, password });
+      const response = await axios.post('http://localhost:5000/api/login', { username, password });
       console.log(response.data); // Agrega esta línea para mostrar la respuesta del servidor en la consola
       // Si la autenticación es exitosa, muestra un mensaje de éxito
       setMessage('Autenticación exitosa');
