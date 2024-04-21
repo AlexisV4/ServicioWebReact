@@ -1,0 +1,243 @@
+
+/*Contenedor del nav color gris del fondo*/
+.inicio-lista{
+    background-color: #4c93de;
+    margin-top:-8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 65px;
+    box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+/*Quitamos estilo a las LI y los convertimos en contenedores con display flex para luego aplicar GAP*/
+ul.inicio-lista{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 260px;
+    padding-top: 30px;
+}
+
+/*Le quitamos la decoración a las letras del nav y ponemos color*/
+.inicio-lista li a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Aqui definimos el tipo de letra y el tamaño a las listas del nav*/
+nav.inicio-navegacion ul.inicio-lista{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul.inicio-lista li:hover{
+    transform: scale(1.1); /* Realiza un efecto de zoom al 110% del tamaño original */
+    transition: all 0.8s ease; /*Cuando se pasa el cursor sobre el nav hace que se vea mas lento */
+    text-decoration: underline; /*Subraya el texto al pasar por encima*/
+    text-underline-offset: 50%;
+    color:rgb(255, 255, 255);
+}
+
+.login img {
+    max-width: 40px;
+    /* Permite posicionar el ícono de login dentro del contenedor del menú */
+    position: absolute;
+    /* Ajusta la posición horizontal del ícono de login según tus necesidades */
+    right: 180px;
+    top: 20px;
+    /* Coloca el ícono de login en una capa superior que el menú de navegación */
+    z-index: 3;
+    cursor: pointer;
+}
+
+.login img:hover{
+    transform: scale(1.3); /* Realiza un efecto de zoom al 110% del tamaño original */
+    transition: all 0.8s ease
+}
+
+.login p{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins" sans-serif;
+    font-size: 18px;
+
+}
+
+/*Modificacion del logo*/
+.logo img{
+    max-width: 80px;
+    height: auto;
+    position: absolute; /*Indica que la imagen dentro del elemento con clase .logo se posicionará de forma absoluta en relación con su elemento padre más cercano que tenga una posición no estática. En este caso, el elemento padre más cercano es el <header> con position: relative;.*/
+    top: 1%;  
+    left: 2%;        /*Los valores top, right, y transform se utilizan para controlar la posición y la alineación de la imagen dentro del encabezado en relación con el <header>*/
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+    border-radius: 13px;
+}
+
+/*Texto del titulo H1*/
+.titulo h1{
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+
+/*texto para el lateral H2 Acerca de nosotros*/
+.texto-lateral h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+/*texto para el lateral P Acerca de nosotros*/
+.texto-lateral p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.footer {
+    background-color:#4c93de; /* Agrega un color de fondo */
+    color: white; /* Color del texto */
+    padding: 30px 0; /* Espaciado interior del footer */
+    font-family: "Poppins", sans-serif;
+    margin-top: 140px;
+    margin-left: -8px;
+    margin-right: -10px;
+    margin-bottom:  -15px;
+    height: 140px;
+}
+
+/*Aqui se crea el contenedor del div class="footer-contenido" donde está el correo, dirección etc*/
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*Aqui se crea el contenedor del div class="footer-seccion" donde están los enlaces de las redes sociales*/
+.footer-seccion {
+    flex: 1;
+    max-width: 30%; /* Ancho máximo de cada sección */
+    margin: 0 10px; /* Espacio entre las secciones */
+    margin-left: 40px;
+}
+
+/*Modificación de los titulos Contacto y Redes Sociales*/
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*Modificación de margenes superio, inferior y laterales de los parrafos*/
+.footer p {
+    margin: 5px 0;
+}
+
+.footer ul { 
+    list-style: none; /*Esta propiedad CSS elimina los marcadores o viñetas predeterminados que suelen aparecer en las listas desordenadas. En otras palabras, quita los puntos o cualquier otro símbolo que normalmente se muestra antes de cada elemento de la lista.*/
+    padding: 0; /*Esta propiedad establece el espaciado interior (padding) del elemento ul en cero píxeles. El padding controla la distancia entre el contenido del elemento y su borde interior. Al establecerlo en cero, se asegura de que no haya espacio adicional en el interior del elemento ul. Esto a menudo se hace para que los elementos de la lista estén alineados directamente con el borde del elemento ul y no haya ningún espacio en blanco no deseado alrededor de ellos.*/
+}
+
+/*Quita estilo a los links de las redes sociales, y los acomoda de acuerdo a su contenedor redes-sociales*/
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    display: flex; /*Esta propiedad CSS se utiliza para convertir el elemento ul en un contenedor flexible. Esto significa que los elementos de la lista (li) dentro de la lista desordenada se comportarán como elementos flexibles, lo que permite alinearlos en una fila o columna, controlar el espaciado entre ellos y alinearlos de diversas maneras utilizando las propiedades de flexbox.*/
+}
+
+/*Es el gap o el margen entre las redes sociales, entre mas PX mas se separan ya que estan actuando como contenedor gracias al display: flex de arriba*/
+.redes-sociales li {
+    margin-right: 40px;
+}
+
+/*Tipo de fuente, color y transición de la letra de las redes sociales*/
+.redes-sociales a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*Cuando se pasa el cursor por encima se subraya de color blanco*/
+.redes-sociales a:hover {
+    transition: all 0.8s ease; /*Cuando se pasa el cursor sobre el nav hace que se vea mas lento */
+    text-decoration: underline; /*Subraya el texto al pasar por encima*/
+    text-underline-offset: 50%;
+    color:rgb(255, 255, 255);
+}
+
+/*Alinea el texto, margen y define el tamaño de letra de los derechos del footer en div class="footer-derechos"*/
+.footer-derechos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.animated-background {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 80px;
+    position: relative;
+    background-image: url(imagenes/fondo.jpg); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 20px 20px 20px rgba(17, 120, 255, 0.3);
+    border-radius: 2%;
+    opacity: 0.6;
+}
+
+
+/* Estilos para el texto en el lado izquierdo */
+.texto-lateral {
+    text-align: left;
+    margin-top: -40px;
+    margin-left: 30px;
+    margin-bottom: -25px;
+    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para legibilidad */
+}
+
+.texto-lateral h2{
+    margin-top: 20px;
+    font-family: "Poppins" sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texto-lateral p{
+    margin-top: 30px;
+    font-family: "Poppins" sans-serif;
+    font-size: 20px;
+}
+
+.logo-pagina img{
+    width: 400px;
+    height: auto;
+    margin-left: 65%;
+    margin-top: -260px;
+    position: absolute;
+    box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+    border-radius: 13px;
+}
+
+.redes-sociales-logos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1015px;
+    margin-top: -30px;
+    gap: 75px;
+    position: absolute;
+
+}
+
+.redes-sociales-logos a img{
+    width: 30px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}

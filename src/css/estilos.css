@@ -1,0 +1,55 @@
+.dropdown-menu a:hover{
+    text-decoration: underline;
+    color: rgba(4, 228, 228, 0.795);
+    background-color: rgba(211, 211, 211, 0.123); /* Cambia el color de fondo al hacer hover */
+    border-radius: 5px; /* Agrega bordes redondeados al hacer hover */
+    padding: 5px 10px; /* Ajusta el relleno al hacer hover */
+
+}
+
+.container-fluid a{
+    margin-left: 20px;
+}
+
+a.navbar-brand {
+    margin-left: 0px;
+}
+
+h1.nombre-pagina {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: left;
+    
+    
+    
+  
+}
+
+/*Se crea este selector para cambiarle el tipo de letra y tamñano al cuerpo de la pagina con la etiqueta main dentro del section*/
+main .bienvenida {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    margin-left: 30px; /*establece un margen izquierdo de 30 píxeles para el texto main para que quede mas centrado*/
+    margin-top: 40px; /*establece un margen superior de 50 píxeles para el texto main*/
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+
+
+footer {
+    position: relative; /* Fijar la posición */
+    left: 0;
+    bottom: 0; /* Colocar en la parte inferior */
+    width: 100%; /* Ancho completo */
+    background-color: #f8f9fa; /* Color de fondo */
+    text-align: center; /* Alinear el contenido al centro */
+    padding-top: 35px;
+    height: 90px;
+}

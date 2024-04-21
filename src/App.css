@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +36,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form {
+  max-width: 300px; /* Establecer un ancho máximo para el formulario */
+  margin: auto; /* Centrar horizontalmente el formulario */
+  position: fixed; /* Fijar la posición del formulario */
+  top: 50%; /* Colocar el formulario en la mitad superior de la pantalla */
+  left: 50%; /* Centrar horizontalmente el formulario */
+  transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente el formulario */
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 200px;
+
 }
